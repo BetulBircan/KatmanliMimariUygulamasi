@@ -1,4 +1,5 @@
-﻿using NORTHWND.Entities.Concrete;
+﻿using NORTHWND.DataAccess.Abstract;
+using NORTHWND.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;

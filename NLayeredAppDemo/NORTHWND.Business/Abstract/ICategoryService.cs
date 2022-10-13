@@ -5,12 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NORTHWND.DataAccess.Abstract
+namespace NORTHWND.Business.Abstract
 {
-    public interface IProductDal : IEntityRepository<Product>
+    public class ICategoryService
     {
+        List<Category> GetAll();
     }
 }
-
-
-
