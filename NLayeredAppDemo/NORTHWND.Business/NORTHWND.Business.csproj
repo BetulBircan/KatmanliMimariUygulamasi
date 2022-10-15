@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NORTHWND.DataAccess\NORTHWND.DataAccess.csproj" />
     <ProjectReference Include="..\NORTHWND.Entities\NORTHWND.Entities.csproj" />
   </ItemGroup>
 
