@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NORTHWND.Business.Abstract
 {
-    public class ICategoryService
+    public interface ICategoryService
     {
         List<Category> GetAll();
     }
