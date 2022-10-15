@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NORTHWND.DataAccess.Abstract;
 using NORTHWND.Entities.Abstract;
 using System;
 using System.Collections.Generic;
