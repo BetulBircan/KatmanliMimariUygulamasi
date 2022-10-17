@@ -54,12 +54,7 @@ namespace NORTHWND.WebFormsUI
             dgwProduct.DataSource = _productService.GetAll();
         }
 
-        private void dgwProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        
+       
 
         private void tbxProductName_TextChanged(object sender, EventArgs e)
         {
@@ -73,6 +68,8 @@ namespace NORTHWND.WebFormsUI
             }
 
         }
+
+    
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -121,9 +118,6 @@ namespace NORTHWND.WebFormsUI
 
                 MessageBox.Show(exception.Message);
             }
-
-
-
         }
 
         private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -134,7 +128,10 @@ namespace NORTHWND.WebFormsUI
             tbxUpdateUnitPrice.Text = row.Cells[3].Value.ToString();
             tbxUpdateQuantityPerUnit.Text = row.Cells[4].Value.ToString();
             tbxUpdateStock.Text = row.Cells[5].Value.ToString();
+
         }
+
+       
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
@@ -157,9 +154,9 @@ namespace NORTHWND.WebFormsUI
                 }
 
             }
-
-
         }
+
+       
 
         private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -173,5 +170,7 @@ namespace NORTHWND.WebFormsUI
 
             }
         }
+
+        
     }
 }

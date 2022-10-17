@@ -113,6 +113,7 @@
             this.tbxProductName.Name = "tbxProductName";
             this.tbxProductName.Size = new System.Drawing.Size(305, 27);
             this.tbxProductName.TabIndex = 1;
+            this.tbxProductName.TextChanged += new System.EventHandler(this.tbxProductName_TextChanged);
             // 
             // lblProductName
             // 
@@ -132,6 +133,7 @@
             this.dgwProduct.RowTemplate.Height = 29;
             this.dgwProduct.Size = new System.Drawing.Size(834, 202);
             this.dgwProduct.TabIndex = 4;
+            this.dgwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProduct_CellClick);
             // 
             // gbxProductAdd
             // 
@@ -161,6 +163,7 @@
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tbxQuantityPerUnit
             // 
@@ -273,6 +276,7 @@
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // tbxUpdateQuantityPerUnit
             // 
@@ -364,6 +368,7 @@
             this.btnRemove.TabIndex = 7;
             this.btnRemove.Text = "Sil";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // Form1
             // 
